@@ -1,0 +1,408 @@
+body{
+    width: 100%;
+    height: 100%;
+    background: #F3F5FC;
+}
+
+#logo{
+    position: absolute;
+    display: flex;
+
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+#izquierda{
+    position: absolute;
+    width: 60%;
+    height: 95%;
+    left: 0;
+    top: 0;
+}
+
+#texto1{
+    position: absolute;
+    max-height: 55%;
+    min-height: 55%;
+    max-width: 80%;
+    min-width: 80%;
+    left: 11%;
+    top: 168px;
+    background-color: #F3F5FC;
+    border: none;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: #0A3871;
+}
+
+#texto{
+    position: absolute;
+    bottom: 70px;
+    left: 12%;
+    margin-bottom: 1%;
+    width: 205px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+}
+
+#advertencia{
+    width: 14px;
+    height: 14px;
+}
+
+#encriptar{
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+
+    width: 28%;
+    height: 67px;
+
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+#desencriptar{
+    position: absolute;
+    bottom: 1%;
+    left: 30%;
+    margin-left: 100px;
+
+    max-width: 328px;
+    width: 28%;
+    height: 67px;
+
+    background: #D8DFE8;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #0A3871;
+
+    cursor: pointer;
+}
+
+#derecha{
+    position: absolute;
+    width: 36%;
+    height: 95%;
+    right: 3%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: white;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#nino{
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    top: 13%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#noEncontrado{
+    position: absolute;
+    bottom: 34%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 75%;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#textDesifrar{
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 75%;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+#desifrar{
+    position: relative;
+    left: 4%;
+    top: 2%;
+    max-height: 85%;
+    min-height: 85%;
+    max-width: 90%;
+    min-width: 90%;
+    width: 90%;
+    background: transparent;
+    border: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#autor{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#bCopiar{
+    position: absolute;
+    box-sizing: border-box;
+    background: white;
+    visibility: hidden;
+
+    padding: 24px;
+
+    width: 88%;
+    height: 67px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 4%;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+
+    cursor: pointer;
+}
+
+
+@media screen and (width < 769px) {
+
+    .contenedor{
+        display: grid;
+    }
+    
+    #izquierda{
+        width: 100%;
+        height: 80%;
+        display: block;
+    }
+
+    #texto1{
+        top: 110px;
+        max-height: 55%;
+        min-height: 55%;
+        max-width: 80%;
+        min-width: 80%;
+    }
+
+    #encriptar{
+        width: 40%;
+        left: 7%;
+    }
+
+    #desencriptar{
+        width: 40%;
+        margin-left: 24%;
+    }
+
+    #derecha{
+        width: 94%;
+        height: 14%;
+        left: 0;
+        right: 0;
+        top: 80%;
+        margin: auto;
+        display: block;
+    }
+
+    #nino{
+        display: none;
+    }
+
+    #noEncontrado{
+        top: 5px;
+        height: 28px;
+    }
+
+    #textDesifrar{
+        height: 0;
+        bottom: 10px;
+        top: 45px;
+    }
+
+    #desifrar{
+        max-height: 74%;
+        min-height: 74%;
+    }
+    
+    #bCopiar{
+        visibility: hidden;
+    }
+
+    footer{
+        margin: auto;
+        top: 109%;
+    }
+}
+
+@media screen and (width < 376px) {
+    .contenedor{
+        display: grid;
+    }
+
+    #logo{
+        left: 0;
+        top: 20px;
+    }
+
+    #izquierda{
+        width: 100%;
+        height: 75%;
+        display: block;
+    }
+
+    #texto1{
+        max-height: 40%;
+        min-height: 40%;
+        max-width: 90%;
+        min-width: 90%;
+        left: 4%;
+    }
+
+    #texto{
+        bottom: 180px;
+    }
+
+    .boton1{
+        display: grid;
+    }
+
+    #encriptar{
+        display: block;
+        width: 90%;
+        bottom: 100px;
+        left: 5%;
+    }
+
+    #desencriptar{
+        display: block;
+        width: 90%;
+        bottom: 20px;
+        margin-left: 0;
+        left: 6%;
+    }
+    
+    #derecha{
+        width: 90%;
+        height: 20%;
+        top: 70%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: block;
+        background-color: white;
+    }
+
+    #nino{
+        visibility: hidden;
+        /*display: none;*/
+    }
+
+    #noEncontrado{
+        bottom: 50%;
+        height: 28px;
+    }
+
+    #textDesifrar{
+        height: 18px;
+        bottom: 10px;
+        margin: auto;
+    }
+
+    #desifrar{
+        max-height: 64%;
+        min-height: 64%;
+        top: 5%;
+        bottom: 2%;
+        left: 10px;
+        right: 10px;
+        margin: auto;
+    }
+
+    #bCopiar{
+        visibility: hidden;
+        /*display: none;*/
+    }
+
+    footer{
+        margin: auto;
+        top: 104%;
+    }
+}

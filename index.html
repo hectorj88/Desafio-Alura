@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Desafio Alura</title>
+    </head>
+    <body>
+        <img id="logo" src="imagenes/Logo.png" alt="Logo Alura">
+
+        <div class="contenedor" id="izquierda">
+            <!-- <input id="texto1" type="text" placeholder="ingrese el texto aqui">-->
+            <textarea name="" id="texto1" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <p id="texto"><img id="advertencia" src="imagenes/Vector.png" alt="Advertencia"> Solo letras minusculas y sin acentos</p>
+            <input class="boton1" id="encriptar" value="Encriptar" type="button">
+            <input class="boton1" id="desencriptar" value="Desencriptar" type="button">
+        </div>
+        <!-- -->
+        <div class="contenedor" id="derecha">
+            <img id="nino" src="imagenes/Muñeco.png" alt="Imagen de niño">
+            <h1 id="noEncontrado">Ningún mensaje fue encontrado</h1>
+            <p id="textDesifrar">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <textarea id="desifrar" name="" cols="30" rows="10"></textarea>
+            <input id="bCopiar" value="Copiar" type="button">
+        </div>
+
+        <footer>
+            <p class="contenedor" id="autor">Creado por Hector Rosas 2022</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
